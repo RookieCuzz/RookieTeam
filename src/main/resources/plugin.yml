@@ -1,0 +1,4 @@
+name: RookieTeam
+version: '1.0-SNAPSHOT'
+main: com.cuzz.rookieteam.RookieTeam
+api-version: '1.21'
