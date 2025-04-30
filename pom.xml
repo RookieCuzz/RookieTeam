@@ -13,6 +13,7 @@
 
     <properties>
         <java.version>21</java.version>
+        <remapped.version>1.21.4-R0.1-SNAPSHOT</remapped.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -108,7 +109,7 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.21-R0.1-SNAPSHOT</version>
+            <version>1.21.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -116,7 +117,39 @@
             <artifactId>cuzz</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${basedir}/libs/BukkitMybatis-1.0-SNAPSHOT.jar</systemPath>
+            <systemPath>${pom.basedir}/libs/BukkitMybatis-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>${remapped.version}</version>
+            <classifier>remapped-mojang</classifier>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.cuzz</groupId>
+            <artifactId>RookieFont</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/libs/RookieFonts-1.0-SNAPSHOT-all.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>io.github.odalita-developments.odalitamenus</groupId>
+            <artifactId>core</artifactId>
+            <version>0.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github</groupId>
+            <artifactId>toxicity188</artifactId>
+            <version>1.12.1</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/libs/BetterHud-bukkit-1.12.1.jar</systemPath>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jetbrains/annotations -->
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>26.0.2</version>
         </dependency>
     </dependencies>
 </project>
