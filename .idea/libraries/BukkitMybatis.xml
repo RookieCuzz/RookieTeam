@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BukkitMybatis">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/BukkitMybatis-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
